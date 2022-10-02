@@ -1,0 +1,5 @@
+rootProject.name = 'Wallpaper_App'
+//include ':@ajaybhatia_react-native-wallpaper-manager'
+//project(':@ajaybhatia_react-native-wallpaper-manager').projectDir = new File(rootProject.projectDir, '../node_modules/@ajaybhatia/react-native-wallpaper-manager/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
