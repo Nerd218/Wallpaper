@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from '../Wallpaper_App/Screens/HomeScreen'
-import CategoryScreen from '../Wallpaper_App/Screens/CategoryScreen'
+import HomeScreen from '../Wallpaper/Screens/HomeScreen'
+import CategoryScreen from '../Wallpaper/Screens/CategoryScreen'
 import Splash from './Screens/Splash';
 const Stack = createNativeStackNavigator();
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, Button, ScrollView } from 'react-native';
+import { View, Text, Image, Button, ScrollView, TouchableOpacity } from 'react-native';
 import WallPaperManager from 'react-native-wallpaper-manager';
 
 class CategoryScreen extends React.Component {
@@ -12,17 +12,15 @@ class CategoryScreen extends React.Component {
             <View>
                 <Text>
                     {this.props.route.params.type}
-
                 </Text>
-
                 <Image
-                    style={{ margin: 40, width: "80%", height: "60%", alignContent: 'center' }}
+                    style={{ margin: 40, width: "90%", height: "70%", alignSelf: 'center' }}
                     source={{ uri: this.props.route.params.image }} />
-                <Button
-                    title="Set as Wallpaper"
-                    onPress={() => {this.setWallpaper()}}
-                      
-                />
+               <TouchableOpacity style={{alignSelf:"center",}}  onPress={() => {this.setWallpaper()}}>
+                
+                    <Text style={{padding:10,marginTop:5,backgroundColor:"blue",color:"white",width:200,height:50,textAlign:"center",borderRadius:20,borderWidth:1}}>Set as Wallpaper</Text>
+                   
+                    </TouchableOpacity>
             </View>
         )
     }
