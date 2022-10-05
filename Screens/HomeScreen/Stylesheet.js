@@ -8,9 +8,12 @@ export const styles = StyleSheet.create({
         height: 200,
         width: 250,
     },
+    
     textStyle: {
         marginTop: 20,
         marginBottom: 20,
+        padding:10,
+        backgroundColor:"white"
 
     }
 })
